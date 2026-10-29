@@ -25,7 +25,7 @@ index.php              -> point d'entree unique (routeur "front controller")
 controllers/            -> SiteController, PatientController, AdminController
 models/                 -> classes de donnees (Patient, Service...) + leurs Managers (acces BDD)
 views/                  -> fichiers d'affichage (HTML + PHP)
-helpers/                -> auth.php (verification de connexion), Database.php (connexion PDO centralisee)
+helpers/                -> auth.php (verification de connexion) ; la connexion PDO est ecrite dans chaque Manager (methode connectDB)
 uploads/                -> images envoyees depuis le back-office (actualites, accueil)
 ```
 
